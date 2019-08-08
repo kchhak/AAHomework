@@ -1,3 +1,4 @@
+require "colorize"
 class Simon
   COLORS = %w(red blue green yellow)
 
@@ -30,10 +31,22 @@ class Simon
     sleep(1)
     system("clear")
     add_random_color
-    @seq.each do |color| 
-      puts color
+    seq.each do |color| 
+      puts colored(color)
       sleep(2)
       system("clear")
+    end
+  end
+
+  def colored(color)
+    if color == "blue"
+      color.blue
+    elsif color == "yellow"
+      color.yellow
+    elsif color == "green"
+      color.green
+    elsif color == "red"
+      color.red
     end
   end
 
