@@ -8,11 +8,11 @@ def sluggish_octopus(fish)
     fish.each_with_index do |fish2, j|
       biggest_fish = false if fish2.length > fish1.length
     end
-  end
-
-  return fish1 if biggest_fish
+    return fish1 if biggest_fish
+  end  
 end
 
+p sluggish_octopus(['fish', 'fiiish', 'fiiiiish', 'fiiiish', 'fffish', 'ffiiiiisshh', 'fsh', 'fiiiissshhhhhh'])
 def dominant_octopus(fish)
   prc = Proc.new {|x,y| y.length <=> x.length}
   fish.merge_sort(&prc).first
