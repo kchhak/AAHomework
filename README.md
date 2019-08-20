@@ -8,3 +8,6 @@ W6D5: RSpec
 
 W7D2: Time complexity
 W7D3: LRU Cache w/ array implementation
+
+W8D1: Plays-Playwrights ORM
+W8D2: Intro to Rails
